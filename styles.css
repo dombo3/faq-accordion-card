@@ -1,6 +1,45 @@
-main.container {
+html {
+  height: 100vh;
+}
+
+body {
+  margin: 0px;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 12px;
+  background: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: ivory;
+  width: 90%;
+  margin: 140px auto 0px;
+  border-radius: 20px;
+}
+
+.card .image-container {
+  background-image: url('./images/bg-pattern-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 100px;
+}
+
+.card .image-container img {
+  position: relative;
+  display: block;
+  top: -100px;
+  left: -15px;
+}
+
+.faq-container {
   width: 300px;
   border: dotted 1px blue;
+}
+
+.faq-container {
+  text-align: center;
 }
 
 .topdown-toggle {
