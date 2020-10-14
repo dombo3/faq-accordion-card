@@ -1,0 +1,29 @@
+main.container {
+  width: 300px;
+  border: dotted 1px blue;
+}
+
+.topdown-toggle {
+  border: solid 1px black;
+}
+
+.topdown-toggle p {
+  margin-top: 0px;
+}
+
+.topdown-toggle .question-bar {
+  display: flex;
+  align-items: center;
+}
+
+.topdown-toggle .question-bar h4 {
+  line-height: 7px;
+}
+
+.topdown-toggle .question-bar img {
+  margin-left: auto;
+}
+
+.hidden {
+  display: none;
+}
