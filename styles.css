@@ -32,7 +32,7 @@ body {
 .faq-container {
   width: 250px;
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 .faq-container h1 {
@@ -72,4 +72,12 @@ body {
 
 .hidden {
   display: none;
+}
+
+.emphasized {
+  font-weight: 800;
+}
+
+.rotate {
+  transform: rotate(180deg);
 }

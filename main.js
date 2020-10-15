@@ -1,9 +1,11 @@
-let images = document.querySelectorAll('img');
+let questionBars = document.querySelectorAll('.topdown-toggle');
 
-for (let i = 0; i < images.length; i++) {
-  images[i].addEventListener('click', hide);
+for (let i = 0; i < questionBars.length; i++) {
+  questionBars[i].addEventListener('click', hide);
 }
 
 function hide(e) {
- e.target.parentNode.parentNode.querySelector('.topdown-toggle p').classList.toggle('hidden');
+  this.querySelector('.topdown-toggle p').classList.toggle('hidden');
+  this.querySelector('.question-bar h4 span').classList.toggle('emphasized');
+  this.querySelector('.question-bar img').classList.toggle('rotate');
 }
