@@ -1,3 +1,7 @@
+html {
+  min-height: 100vh;
+}
+
 body {
   margin: 0px;
   font-family: 'Kumbh Sans', sans-serif;
@@ -31,12 +35,12 @@ body {
 
 .faq-container {
   width: 250px;
-  text-align: center;
-  padding-bottom: 40px;
+  height: 330px;
 }
 
 .faq-container h1 {
   color: hsl(238, 29%, 16%);
+  text-align: center;
 }
 
 
@@ -80,4 +84,55 @@ body {
 
 .rotate {
   transform: rotate(180deg);
+}
+
+.attribution {
+  font-size: 11px;
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+.attribution a {
+  color:white;
+}
+
+@media (min-width: 376px) {
+  .card {
+    flex-direction: row; 
+    align-items: stretch;
+    width: max-content;
+    max-width: 648px;
+  }
+
+  .card .image-container {
+    position: relative;
+    background-image: url('./images/bg-pattern-desktop.svg'), url('./images/illustration-woman-online-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: right -220px, right 80px;
+    background-size: 730px, 320px;
+    height: initial;
+    width: 270px;
+  }
+
+  .card .image-container img {
+    max-width: 300px;
+    width: 130px;
+    height: auto;
+    position: absolute;
+    top: unset;
+    left: -65px;
+    bottom: 80px;
+    content: url("./images/illustration-box-desktop.svg");
+  }
+
+  .faq-container {
+    margin: 40px 60px 0px 60px;
+  }
+
+  .faq-container h1 {
+    text-align: left;
+  }
 }
