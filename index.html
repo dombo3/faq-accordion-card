@@ -14,7 +14,11 @@
 <body>
   <main class="card">
     <div class="image-container">
-      <img id="illustration" src="images/illustration-woman-online-mobile.svg" alt="">
+      <picture id="illustration">
+        <source srcset="images/illustration-woman-online-desktop.svg" media="(min-width: 376px)">
+        <img src="images/illustration-woman-online-mobile.svg" alt="">
+      </picture>
+      <img id="box" class="hidden" src="images/illustration-box-desktop.svg">
     </div>
     <div class="faq-container">
       <h1>FAQ</h1>

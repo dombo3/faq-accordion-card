@@ -35,7 +35,3 @@ function hide(e) {
     }
   }
 }
-
-if (window.innerWidth > 375) {
-  document.getElementById('illustration').setAttribute('src', './images/illustration-box-desktop.svg');
-}
