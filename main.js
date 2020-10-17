@@ -12,6 +12,16 @@ function hide(e) {
   const parent = this.parentNode;
   const current = this;
 
+/* [].slice.call() explanation
+*  https://stackoverflow.com/questions/2125714/explanation-of-slice-call-in-javascript
+*  https://shifteleven.com/articles/2007/06/28/array-like-objects-in-javascript/
+*
+*  --- Alternative solution ---
+*  const siblingsAlternative = new Array(...parent.children).filter(function(child) {
+*  return child !== current && child.tagName !== 'H1';
+*  })
+*/
+
   const siblings = [].slice.call(parent.children).filter(function(child) {
       return child !== current && child.tagName !== 'H1';
   });
@@ -24,4 +34,8 @@ function hide(e) {
       siblings[i].querySelector('.question-bar img').classList.toggle('rotate');
     }
   }
+}
+
+if (window.innerWidth > 375) {
+  document.getElementById('illustration').setAttribute('src', './images/illustration-box-desktop.svg');
 }
