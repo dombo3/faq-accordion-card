@@ -15,6 +15,7 @@ body {
   align-items: center;
   background-color: ivory;
   width: 80%;
+  min-width: 290px;
   margin: 140px auto 50px;
   border-radius: 20px;
 }
